@@ -1,16 +1,19 @@
 {
 "title": "Routing filters",
-"linkTitle": "Routing filters",
-"weight": 11,
-"date": "2019-10-17",
-"description": "Commonly used routing filters, including Connect to URL and Connection."
+  "linkTitle": "Routing filters",
+  "weight": 11,
+  "date": "2019-10-17",
+  "description": "Commonly used routing filters, including Connect to URL and Connection."
 }
-
 <!-- TODO reorder based on usage from GA-->
 
 Depending on how the API Gateway is perceived by the client, different combinations of routing filters can be used. For an introduction to routing scenarios and the filters in the **Routing** category, see [Get started with routing configuration](/docs/apim_policydev/apigw_polref/routing_getstarted/).
 
 ## Connect to URL filter
+
+Tom_testing
+
+
 
 The **Connect to URL**
 filter is the simplest routing filter to use to connect to a target web service. To configure this filter to send messages to a web service, you need only enter the URL of the service in the **URL**
@@ -25,7 +28,7 @@ filter is equivalent to using the following combination of routing filters:
 * Connection
 
 The **Connect to URL**
-filter enables the API Gateway to act as the endpoint to the client connection (and not as a proxy), and to hide the deployment hierarchy of protected web services from clients. In other words, the API Gateway performs *service virtualization*.
+filter enables the API Gateway to act as the endpoint to the client connection (and not as a proxy), and to hide the deployment hierarchy of protected web services from clients. In other words, the API Gateway performs _service virtualization_.
 
 ### Configure general settings
 
@@ -84,7 +87,7 @@ tab that are considered trusted by the API Gateway when connecting to the server
 field on this dialog.
 
 The table on the **Trusted Certificates**
-tab lists all certificates imported into the API Gateway Certificate Store. To *trust*
+tab lists all certificates imported into the API Gateway Certificate Store. To _trust_
 a certificate for this particular connection, select the box next to the certificate in the table.
 
 To select all certificates for a particular CA, select the box next to the CA parent node in the table.
@@ -114,7 +117,7 @@ You can configure the following settings on the **Advanced (SSL)** tab.
 You can configure the following SSL protocol options:
 
 | Option                           | Description                                                                                                                          |
-|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | Do not use the SSL v2 protocol   | Specifies not to use SSL v2 for outbound connections to avoid any weaknesses in this protocol. This option is selected by default.   |
 | Do not use the SSL v3 protocol   | Specifies not to use SSL v3 for outbound connections to avoid any weaknesses in this protocol. This option is selected by default.   |
 | Do not use the TLS v1 protocol   | Specifies not to use TLS v1 for outbound connections to avoid any weaknesses in this protocol. This option is selected by default.   |
@@ -183,11 +186,11 @@ button. In the **Configure HTTP Status Code**
 dialog, complete the following fields:
 
 * **Name**:
-Enter a name for the HTTP status range.
+  Enter a name for the HTTP status range.
 * **Start status**:
-Enter the first HTTP status code in the range.
+  Enter the first HTTP status code in the range.
 * **End status**:
-Enter the last HTTP status code in the range.
+  Enter the last HTTP status code in the range.
 
 To add one specific status code only, enter the same code in the **Start status**
 and **End status**
@@ -254,7 +257,7 @@ is selected, you can configure a specific proxy server to use for the connection
 {{< alert title="Note" color="primary" >}}API Gateway does not support persistent SSL connections to back-end servers using proxy tunneling. The API Gateway connection caching mechanism is not designed for proxy tunnel connections.{{< /alert >}}
 
 **Transparent Proxy (present client's IP address to server)**:
-Enables the API Gateway as a *transparent proxy* on Linux systems with the `TPROXY` kernel option set. When selected, the IP address of the original client connection that caused the policy to be invoked is used as the local address of the connection to the destination server.
+Enables the API Gateway as a _transparent proxy_ on Linux systems with the `TPROXY` kernel option set. When selected, the IP address of the original client connection that caused the policy to be invoked is used as the local address of the connection to the destination server.
 
 #### Redirect settings
 
@@ -274,7 +277,7 @@ Specifies whether the API Gateway sends any content-related message headers when
 message attribute, generally populated by the API Gateway for the incoming call. This attribute can be manipulated in a policy using the appropriate filters, if required. This field is not selected by default.
 
 **HTTP Host Header**:
-An HTTP 1.1 client *must* send a `Host`
+An HTTP 1.1 client _must_ send a `Host`
 header in all HTTP 1.1 requests. The `Host`
 header identifies the host name and port number of the requested resource as specified in the original URL given by the client.
 
