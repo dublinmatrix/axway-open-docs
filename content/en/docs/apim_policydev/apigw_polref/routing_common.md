@@ -13,7 +13,7 @@ Depending on how the API Gateway is perceived by the client, different combinati
 
 Tom_testing
 
-
+Additional testing
 
 The **Connect to URL**
 filter is the simplest routing filter to use to connect to a target web service. To configure this filter to send messages to a web service, you need only enter the URL of the service in the **URL**
